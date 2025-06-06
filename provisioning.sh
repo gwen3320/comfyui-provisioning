@@ -97,6 +97,12 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/ultralytics" \
+        "${ULTRALYTICS_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/user/default/workflows" \
+        "${WORKFLOW_MODELS[@]}"
     provisioning_print_end
 }
 

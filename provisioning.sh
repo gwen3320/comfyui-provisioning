@@ -122,6 +122,7 @@ ULTRALYTICS_MODELS=(
     "https://civitai.com/api/download/models/1207975?type=Archive&format=Other"
     "https://civitai.com/api/download/models/157700?type=Archive&format=Other"
     "https://civitai.com/api/download/models/1474840?type=Model&format=PickleTensor"
+    "https://civitai.com/api/download/models/1661210?type=Archive&format=Other"
 )
 
 WORKFLOW=(

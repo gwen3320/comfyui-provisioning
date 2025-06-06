@@ -14,26 +14,40 @@ APT_PACKAGES=(
 )
 
 PIP_PACKAGES=(
-    #"package-1"
-    #"package-2"
+    "ultralytics"
+    "piexif"
+    "dill"
+    "segment_anything"
+    "deepdiff"
 )
 
 NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
-    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
     "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
+    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+    "https://github.com/TinyTerra/ComfyUI_tinyterraNodes"
+    "https://github.com/city96/SD-Latent-Interposer"
+    "https://github.com/evanspearman/ComfyMath"
     "https://github.com/giriss/comfy-image-saver"
+    "https://github.com/Kinglord/ComfyUI_Prompt_Gallery"
+    "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/MoonGoblinDev/Civicomfy"
-    
-
+    "https://github.com/crystian/ComfyUI-Crystools"
 )
 
+
 CHECKPOINT_MODELS=(
-    "https://civitai.com/models/442163?modelVersionId=922768" # Mala Anime Mix NSFW PonyXL
-    "https://civitai.com/models/404154?modelVersionId=1295881" # WAI-ANI-NSFW-PONYXL
-    "https://civitai.com/models/443821/cyberrealistic-pony" # CyberRealistic Pony
-    # "https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl?modelVersionId=1612720" # WAI-NSFW-illustrious-SDXL
+    "https://civitai.com/api/download/models/938513?type=Model&format=SafeTensor&size=full&fp=fp32"
+    "https://civitai.com/api/download/models/1838857?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    "https://civitai.com/api/download/models/1642508?type=Model&format=SafeTensor&size=full&fp=fp16"
+    "https://civitai.com/api/download/models/1793096?type=Model&format=SafeTensor&size=full&fp=fp16"
+    "https://civitai.com/api/download/models/1767402?type=Model&format=SafeTensor&size=pruned&fp=fp16"
 )
 
 UNET_MODELS=(
@@ -41,19 +55,50 @@ UNET_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/models/938292/split-legs-ponyxl"
-    "https://civitai.com/models/341353/expressiveh-hentai-lora-style?modelVersionId=382152"
-    "https://civitai.com/models/466467/skin-color-slider?modelVersionId=519071"
-    "https://civitai.com/models/549960/stellar-blade-pony?modelVersionId=826235"
-    "https://civitai.com/models/459116/frieren-4-outfits-or-pony-xl-or-sousou-no-frieren"
-    "https://civitai.com/models/552638/gwen-stacy-spiderverse-ponyxl",
-    "https://civitai.com/models/1094832/spider-gwen-or-spider-man-illustrious-and-pony?modelVersionId=1508232"
-    "https://civitai.com/models/349604?modelVersionId=391081"
-    "https://civitai.com/models/528552/gwen-stacy-across-the-spider-verse"
+    "https://civitai.com/api/download/models/244808?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/370153?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/398236?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/5713?type=Model&format=SafeTensor&size=full&fp=fp16"
+    "https://civitai.com/api/download/models/391081?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1508232?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1320876?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1207648?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/406309?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/882494?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/592554?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/424464?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/384635?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/614996?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/566677?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/406518?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/228643?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/215541?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/140753?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1785482?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1693313?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1526491?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1486991?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1400484?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1307919?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1307519?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1205016?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1135168?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1050352?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1001629?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/873004?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/725112?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/686894?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/592762?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/519071?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/435268?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/712947?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/382152?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1286572?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/771845?type=Model&format=SafeTensor"
 )
 
 VAE_MODELS=(
-
+    "https://civitai.com/api/download/models/290640?type=VAE&format=SafeTensor"
 )
 
 ESRGAN_MODELS=(
@@ -64,6 +109,25 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
 
+)
+
+ULTRALYTICS_MODELS=(
+    "https://civitai.com/api/download/models/1780243?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1727552?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1128067?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1114648?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/863091?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/688769?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/168820?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1207975?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/157700?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1474840?type=Model&format=PickleTensor"
+)
+
+WORKFLOW=(
+    "https://civitai.com/api/download/models/1858228?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1036081?type=Archive&format=Other"
+    "https://civitai.com/api/download/models/1062718?type=Archive&format=Other"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###

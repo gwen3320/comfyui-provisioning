@@ -168,6 +168,8 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/user/default/workflows" \
         "${WORKFLOW_MODELS[@]}"
+    provisioning_unzip_ultralytics
+    provisioning_unzip_workflows
     provisioning_print_end
 }
 
@@ -294,6 +296,19 @@ function provisioning_download() {
     else
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
+}
+
+
+function provisioning_unzip_ultralytics() {
+    unzip "${WORKSPACE}/ComfyUI/user/default/ultralytics/*.zip" -d "${WORKSPACE}/ComfyUI/user/default/ultralytics/" -u
+    mv "${WORKSPACE}/ComfyUI/user/default/ultralytics/*seg.pt" "${WORKSPACE}/ComfyUI/user/default/ultralytics/segm/"
+    mv "${WORKSPACE}/ComfyUI/user/default/ultralytics/*.pt" "${WORKSPACE}/ComfyUI/user/default/ultralytics/bbox/"
+    rm "${WORKSPACE}/ComfyUI/user/default/ultralytics/*.zip"
+}
+
+function provisioning_unzip_workflows(){
+    unzip "${WORKSPACE}/ComfyUI/user/default/workflows/*.zip" -d "${WORKSPACE}/ComfyUI/user/default/workflows/" -u
+    rm "${WORKSPACE}/ComfyUI/user/default/workflows/*.zip"
 }
 
 provisioning_start
